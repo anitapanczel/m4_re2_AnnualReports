@@ -1,0 +1,161 @@
+:root {
+    --primary: #eae9e4;
+    --secondary: #1c1717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0;
+}
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 40px;
+    color: var(--primary);
+    background-color: var(--secondary);
+    z-index: 100;
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+.header .left {
+    flex: 80%;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+
+.header .right {
+    flex: 20%;
+    text-align: right;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.cards {
+    position: relative;
+    width: 380px;
+    height: 250px;
+    margin: 50px 20px;
+    padding: 40px;
+    border: 1px solid var(--secondary)
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.sub {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.button_container {
+    position: absolute;
+    left: 0px;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container:hover {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.button_container .button_text {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    flex: 90%;
+    font-size: 14px;
+}
+
+.button_container .material-icons {
+    flex: 10%;
+    text-align: right;
+}
